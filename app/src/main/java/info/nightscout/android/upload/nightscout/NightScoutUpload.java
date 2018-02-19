@@ -75,8 +75,9 @@ public class NightScoutUpload {
         entriesEndpoints = uploadApi.getEntriesEndpoints();
         treatmentsEndpoints = uploadApi.getTreatmentsEndpoints();
         profileEndpoints = uploadApi.getProfileEndpoints();
-
-        uploadStatus(statusRecords, uploaderBatteryLevel);
+        
+        /* comment out this line to stop the device status being sent to NS */
+        /* uploadStatus(statusRecords, uploaderBatteryLevel); */ 
         uploadEvents(records);
     }
 
